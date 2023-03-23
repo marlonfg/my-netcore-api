@@ -71,6 +71,8 @@ namespace APICore.API
             services.AddTransient<IEmailService, EmailService>();
             services.AddTransient<ILogService, LogService>();
             services.AddTransient<IStorageService, StorageService>();
+
+            services.AddScoped<ProductService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
